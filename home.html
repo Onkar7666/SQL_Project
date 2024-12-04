@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-page</title>
+   
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+   
+     body{
+    margin: 0;
+    padding: 0;
+    height: 0;
+    /* background-color: #fbfbfb; */
+    background-image: url(sven-mieke-MsCgmHuirDo-unsplash.jpg);
+    background-color: #212121;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+header{
+    height: 55PX;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ede0d4;
+    background-color: transparent;
+   /* border: 2px solid black;
+    border-radius: 30px;*/
+    size: 0px;
+} 
+
+ol{
+    display: flex;
+    list-style-type: none;
+}
+ol,li,a{
+     display: flex;
+     font-weight: 200px;
+     font-size: 40px;
+     font-style: bold;
+     justify-content: space-between;
+     text-decoration: none;
+     padding-top: 0px;
+     padding-right: 55px;
+     font-size: 17PX;
+     height: 20px;
+     color: white;
+     display: inline-block;
+     transition-duration: 1ms;
+}
+ .header,ol,li,a:hover{ 
+    color: rgb(107, 73, 73);
+    /* text-decoration: underline 1px red; */
+    offset: 10px;
+   
+} 
+
+.hover-line::after{
+    content:" ";
+    display: block;
+    width: 0%;
+    background-color: aqua;
+    transition: width .3;
+}
+.main{
+    color: azure;
+    /* text-align: center; */
+    padding-top: 70px;
+    padding-left: 80px;
+    color: rgb(253, 253, 253);
+    /* text-shadow: -7px 3px 5px rgba(102,49,164,0.61); */
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.num{
+  text-align: center;
+  transition-duration: 0.5s
+}
+.num:hover{
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(17, 12, 11);
+}
+.term{
+  line-height: 30px;
+  word-spacing: 5px;
+  justify-content: center;
+
+}
+.down{
+  height: 40px;
+  color: aliceblue;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: rgb(126, 141, 199);
+}
+.down:hover{
+  background-color: royalblue;
+}
+
+.Next{
+  padding-left: 250px;
+  margin-top: 150px;
+}
+button {
+ padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: #494040;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+}
+
+button::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color: #212121;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
+}
+
+button:hover {
+ color: #e8e8e8;
+}
+
+button:hover::before {
+ width: 100%;
+}
+
+
+ </style>
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    
+    <header class="head">
+        <div class="imges">
+           <img src="https://cdn-icons-png.flaticon.com/128/3996/3996829.png" alt="" srcset="" style="height: 50PX; padding-left: 50px;"> 
+        </div>
+        <ol>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <!-- <span><button class="down">downloadApp</button></span> -->
+            
+        </ol>
+    </header>
+    <main class="main-block">
+       <div class="main tracking-in-contract">
+       <marquee behavior="" direction=""> <h1 class="num" ><span class="health" >HEALTH AND FITNESS TRACKING.</span></h1></marquee>
+        <h5 class="term">Take care of your body.It’s the only place you have to Success is walking from failure to failure with no loss of enthusiasm.</h5>
+        
+       </div>
+    </main>
+
+    <footer>
+    <div class="Next">
+      <button ><a href="loggym.html">Next!</a></button>
+    </div>
+          
+    </footer>
+    
+  
+</body>
+</html>
